@@ -1,0 +1,301 @@
+/*
+
+	CSS TeeAssembler
+
+	Made by Alexander
+	Discord: Alexander_#6686 (just in case)
+	
+	
+	No License, do whatever you want.
+	
+*/
+
+html,body {
+    width: 100%;
+    height: 100%;
+    background-color: #191919;
+    color: white;
+    margin: 0;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+}
+
+:focus {
+    outline: none;
+}
+
+h1 {
+    margin: 0;
+}
+
+.colorsWrap {
+    opacity: 0;
+    transition: .25s;
+}
+
+.colorsWrap .bodyWrap,.colorsWrap .feetWrap {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.colorsWrap span {
+    display: block;
+}
+
+.bodyInput,.feetInput,.externalSkin {
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    background-color: #252525;
+    color: white;
+    font-family: Roboto;
+    font-weight: 300;
+    border: none;
+    font-size: 24px;
+    margin-top: 16px;
+    padding: 0;
+}
+
+.externalSkin {
+    width: calc(50% - 91px);
+    padding: 0 8px;
+    border-bottom: 2px solid transparent;
+    transition: .25s;
+}
+
+.externalSkinButton {
+    display: inline-block;
+    width: 75px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #252525;
+    font-size: 20px;
+    position: relative;
+    bottom: 2px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: .25s;
+}
+
+.externalSkin:invalid,.externalSkin:invalid + .externalSkinButton {
+	border-bottom-color: red;
+}
+
+.result {
+    margin: 8px 0 0 0;
+}
+
+.template {
+    width: 256px;
+    height: 128px;
+    border: 2px solid white;
+    margin: 16px auto 0 auto;
+    background-color: #252525;
+    background-image: linear-gradient(45deg,#202020 25%,transparent 0,transparent 75%,#202020 0,#202020),linear-gradient(45deg,#202020 25%,transparent 0,transparent 75%,#202020 0,#202020);
+    background-position: 2px 2px,32px 32px;
+    background-size: 20px 20px;
+}
+
+.template div {
+    width: 100%;
+    height: 100%;
+    background-image: url("../whis.png")
+}
+
+.checkBoxPlaceholder {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    position: relative;
+    border-radius: 2px;
+    margin-right: 8px;
+    box-sizing: border-box;
+}
+
+.checkBoxPlaceholder .checkBox {
+    -webkit-appearance: none;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    opacity: 0;
+    margin: 0;
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: opacity .2s;
+}
+
+.checkBoxPlaceholder .checkBox:checked {
+    opacity: 1
+}
+
+.checkBoxPlaceholder .checkBox:before {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 6px;
+    width: 6px;
+    height: 12px;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right-width: calc(2/15 * 20px);
+    border-bottom-width: calc(2/15 * 20px);
+    border-color: #151515;
+    box-sizing: content-box;
+    transform: rotate(45deg)
+}
+
+.checkBoxLabel {
+    font-size: 22px;
+}
+
+/* Tee */
+.tee {
+    width: 96px;
+    height: 96px;
+    border: 2px solid white;
+    position: relative;
+    margin: 16px auto;
+}
+
+.transparent {
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 18px);
+    background-color: #252525;
+    background-image: linear-gradient(45deg,#202020 25%,transparent 0,transparent 75%,#202020 0,#202020),linear-gradient(45deg,#202020 25%,transparent 0,transparent 75%,#202020 0,#202020);
+    background-position: 2px 2px,32px 32px;
+    background-size: 20px 20px;
+}
+
+.teeSkin {
+    background-image: url(../whis.png);
+    position: absolute;
+}
+
+.body,.body-shadow {
+    width: 96px;
+    height: 96px;
+}
+
+.back-foot,.back-foot-shadow,.front-foot,.front-foot-shadow {
+    width: 64px;
+    height: 32px;
+}
+
+.body-shadow {
+    background-position: -96px 0;
+}
+
+.back-foot-shadow {
+    background-position: -192px -64px;
+    top: 52px;
+    left: 6px;
+    transform: scale(1.1);
+}
+
+.back-foot {
+    background-position: -192px -32px;
+    top: 52px;
+    left: 7px;
+    transform: scale(1.4);
+}
+
+.body {
+    background-position: 0 0;
+}
+
+.front-foot-shadow {
+    background-position: -192px -64px;
+    top: 52px;
+    left: 26px;
+    transform: scale(1.1);
+}
+
+.front-foot {
+    background-position: -192px -32px;
+    top: 52px;
+    left: 26px;
+    transform: scale(1.35);
+}
+
+.lEye,.rEye {
+    width: 32px;
+    height: 32px;
+    background-position: -64px -96px;
+    filter: brightness(1);
+}
+
+.lEye {
+    top: 29px;
+    left: 37px;
+    transform: scale(1.12);
+}
+
+.rEye {
+    top: 29px;
+    left: 49px;
+    transform: scale(1.12) rotateY(-180deg);
+}
+
+img[src="helper.png"] {
+    position: absolute;
+    top: 20px;
+    left: 17px;
+    display: none;
+}
+
+.body-shadow, .body, .bodyColor {
+    transform: scale(.9);
+    top: 0;
+}
+
+.body-color {
+    width: 96px;
+    height: 96px;
+    -webkit-mask-image: url(../whis.png);
+    -webkit-mask-position: 0 0;
+    mask-image: url(../whis.png);
+    mask-position: 0 0;
+    transform: scale(.87);
+}
+
+.back-foot-color,.front-foot-color {
+    width: 64px;
+    height: 32px;
+    -webkit-mask-image: url(../whis.png);
+    -webkit-mask-position: -192px -32px;
+    mask-image: url(../whis.png);
+    mask-position: -192px -32px;
+    position: absolute;
+    top: 52px;
+}
+
+.back-foot-color {
+    left: 7px;
+}
+
+.front-foot-color {
+    left: 26px;
+}
+
+@media screen and (max-width: 564px) {
+	.externalSkin {
+		width: calc(75% - 91px);
+	}
+}
+
+@media screen and (max-width: 370px) {
+	.externalSkin {
+		width: calc(100% - 91px);
+	}
+}

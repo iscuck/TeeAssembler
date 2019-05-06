@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="theme-color" content="#151515" />
+		
+		<!-- OpenGraph -->
+		
+		<!-- StyleSheets -->
+		
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400" />
+		
+		<title>CSS Tee Assembler</title>
+		
+	</head>
+	<body>
+	
+		<h1>TeeAssembler</h1>
+	
+		<input class="externalSkin" type="url" placeholder="External Skin URL"><div class="externalSkinButton">Load</div>
+
+		<div class="template">
+			<div></div>
+		</div>
+		
+		<div class="transparent"></div>
+		
+		<div class="tee">
+			<!--img src="helper.png"-->
+
+			<div class="body-shadow teeSkin"></div>
+
+			<div class="back-foot-shadow teeSkin"></div>
+			<div class="back-foot-color"></div>
+			<div class="back-foot teeSkin"></div>
+
+			<div class="body-color"></div>
+			<div class="body teeSkin"></div>
+
+			<div class="front-foot-shadow teeSkin"></div>
+			<div class="front-foot-color"></div>
+			<div class="front-foot teeSkin"></div>
+
+			<div class="lEye teeSkin"></div>
+			<div class="rEye teeSkin"></div>
+		</div>
+		
+		<div class="checkBoxPlaceholder">
+			<input class="checkBox" type="checkbox">
+		</div>
+		<span class="checkBoxLabel">Custom colors (Very unstable!)</span>
+
+		<div class="colorsWrap">
+			<div class="bodyWrap">
+				<input class="bodyInput" type="text" placeholder="Body Color Code">
+				<span>Body</span>
+
+				<span class="bodyResult"></span>
+			</div>
+			<div class="feetWrap">
+				<input class="feetInput" type="text" placeholder="Feet Color Code">
+				<span>Feet</span>
+
+				<span class="feetResult"></span>
+			</div>
+		</div>
+
+	</body>
+	
+	<!-- JavaScript -->
+	
+	<script type="text/javascript" src="js/scripts.js"></script>
+
+</html>
