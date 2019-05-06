@@ -1,7 +1,10 @@
 /*
 
-	Made by Alexander Bl.
+	TeeAssembler
 
+	Made by Alexander Bl.
+	Discord: Alexander_#6686 (just in case you want to contact me)
+	
 */
 
 var bodyInput = document.querySelector(".bodyInput"),
